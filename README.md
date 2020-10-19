@@ -5,6 +5,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Inline docs](http://inch-ci.org/github/MRdevX/express-mongo-template.svg?branch=master)](http://inch-ci.org/github/MRdevX/express-mongo-template)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6bef518314e156dd87f5/maintainability)](https://codeclimate.com/github/MRdevX/express-mongo-template/maintainability)
+[![HitCount](http://hits.dwyl.com/MRdevX/express-mongo-template.svg)](http://hits.dwyl.com/MRdevX/express-mongo-template)
 
 A boilerplate/starter project for quickly building production-ready RESTful APIs using Node.js, Express, and Mongoose.
 
