@@ -1,8 +1,7 @@
 # RESTful API Node Server Template using Express and MongoDB
 
-[![Build Status](https://travis-ci.org/hagopj13/node-express-mongoose-boilerplate.svg?branch=master)](https://travis-ci.org/hagopj13/node-express-mongoose-boilerplate)
+[![Build Status](https://travis-ci.org/MRdevX/express-mongo-template.svg?branch=master)](https://travis-ci.org/MRdevX/express-mongo-template)
 [![Coverage Status](https://coveralls.io/repos/github/MRdevX/express-mongo-template/badge.svg?branch=master)](https://coveralls.io/github/MRdevX/express-mongo-template?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2ab03f5d62a1404f87a659afe8d6d5de)](https://www.codacy.com/manual/hagopj13/node-express-mongoose-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=hagopj13/node-express-mongoose-boilerplate&utm_campaign=Badge_Grade)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A boilerplate/starter project for quickly building production-ready RESTful APIs using Node.js, Express, and Mongoose.
