@@ -1,7 +1,7 @@
 # RESTful API Node Server Template using Express and MongoDB
 
 [![Build Status](https://travis-ci.org/hagopj13/node-express-mongoose-boilerplate.svg?branch=master)](https://travis-ci.org/hagopj13/node-express-mongoose-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/hagopj13/node-express-mongoose-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/hagopj13/node-express-mongoose-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/MRdevX/express-mongo-template/badge.svg?branch=master)](https://coveralls.io/github/MRdevX/express-mongo-template?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2ab03f5d62a1404f87a659afe8d6d5de)](https://www.codacy.com/manual/hagopj13/node-express-mongoose-boilerplate?utm_source=github.com&utm_medium=referral&utm_content=hagopj13/node-express-mongoose-boilerplate&utm_campaign=Badge_Grade)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
@@ -164,7 +164,6 @@ Controllers should try to catch the errors and forward them to the error handlin
 const catchAsync = require('../utils/catchAsync');
 
 const controller = catchAsync(async (req, res) => {
-  // this error will be forwarded to the error handling middleware
   throw new Error('Something wrong happened');
 });
 ```
@@ -271,11 +270,11 @@ Logging should be done according to the following severity levels (ascending ord
 ```javascript
 const logger = require('<path to src>/utils/logger');
 
-logger.error('message'); // level 0
-logger.warn('message'); // level 1
-logger.info('message'); // level 2
-logger.http('message'); // level 3
-logger.verbose('message'); // level 4
+logger.error('message');
+logger.warn('message');
+logger.info('message');
+logger.http('message');
+logger.verbose('message');
 logger.debug('message'); // level 5
 ```
 
@@ -295,12 +294,7 @@ The app also contains 2 custom mongoose plugins that you can attach to any mongo
 const mongoose = require('mongoose');
 const { toJSON, paginate } = require('./plugins');
 
-const userSchema = mongoose.Schema(
-  {
-    /* schema definition here */
-  },
-  { timestamps: true }
-);
+const userSchema = mongoose.Schema({}, { timestamps: true });
 
 userSchema.plugin(toJSON);
 userSchema.plugin(paginate);
@@ -367,10 +361,6 @@ To maintain a consistent coding style across different IDEs, the project contain
 ## Contributing
 
 Contributions are more than welcome! Please check out the [contributing guide](CONTRIBUTING.md).
-
-## Inspirations
-
-- [hagopj13/node-express-mongoose-boilerplate](https://github.com/hagopj13/node-express-mongoose-boilerplate)
 
 ## License
 
