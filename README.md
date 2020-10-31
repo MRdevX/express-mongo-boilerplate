@@ -11,6 +11,20 @@ A boilerplate/starter project for quickly building production-ready RESTful APIs
 
 It comes with many built-in features, such as authentication using JWT, request validation, unit and integration tests, continuous integration, docker support, API documentation, pagination, etc. For more details about the features, check the list below.
 
+## Table of Contents
+
+-   [Features](#features)
+-   [Getting Started](#getting-started)
+-   [Project Structure](#project-structure)
+-   [API Documentation](#api-documentation)
+-   [Error Handling](#error-handling)
+-   [Validation](#validation)
+-   [Authentication](#authentication)
+-   [Authorization](#authorization)
+-   [Logging](#logging)
+-   [Custom Mongoose Plugins](#custom-mongoose-plugins)
+-   [Linting](#linting)
+
 ## Features
 
 -   **ES9**: latest ECMAScript features
@@ -290,7 +304,7 @@ Note: API request information (request url, response code, timestamp, etc.) are 
 
 ## Custom Mongoose Plugins
 
-The app also contains 2 custom mongoose plugins that you can attach to any mongoose model schema. You can find the plugins in `src/models/plugins.js`.
+The app also contains 2 custom mongoose plugins that you can attach to any mongoose model schema. You can find the plugins in `src/models/plugins`.
 
 ```javascript
 const mongoose = require('mongoose')
@@ -330,11 +344,13 @@ The `options` param can have the following (optional) fields:
 
 ```javascript
 const options = {
-    sortBy: 'name:desc',
-    limit: 5,
-    page: 2,
+    sortBy: 'name:desc', // sort order
+    limit: 5, // maximum results per page
+    page: 2, // page number
 }
 ```
+
+The plugin also supports sorting by multiple criteria (separated by a comma): `sortBy: name:desc,role:asc`
 
 The `paginate` method returns a Promise, which fulfills with an object having the following properties:
 
